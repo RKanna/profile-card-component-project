@@ -10,12 +10,15 @@
   --dark-gray: hsl(0, 0%, 59%);
 }
 body {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   align-items: center;
-  width: 100vh;
+  width: 100%;
+  height: 100vh;
   font-family: "Kumbh Sans", sans-serif;
   overflow: hidden;
+  object-fit: cover;
+  background-size: contain;
   background-color: var(--dark-cyan);
 }
 .top-bg-img {
@@ -37,6 +40,80 @@ body {
   height: 70rem;
   width: 70rem;
   bottom: -45rem;
-  right: -30rem;
+  right: -25rem;
   background-position: bottom end;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.card-container {
+  background-color: white;
+  width: 21.5rem;
+  height: 27rem;
+  border-radius: 10px;
+  z-index: 2;
+}
+.pattern-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+}
+.profile-img-container {
+  width: 25%;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2.5rem;
+}
+.profile-img {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.content-box-container {
+  width: 100%;
+  height: 2rem;
+  font-size: 11px;
+  color: hsl(229, 23%, 23%);
+  margin-top: -20rem;
+}
+.element-span {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+.para-content {
+  color: hsl(0, 0%, 59%);
+  margin-top: -17.5rem;
+}
+.line-element {
+  width: 100%;
+  border: 1px solid #efefee;
+  margin-top: -14.2rem;
+}
+.value-container {
+  width: 100%;
+  height: 5rem;
+  justify-content: space-around;
+  margin-top: -13rem;
+}
+.para-containers {
+  width: 100%;
+  margin-top: -10.5rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+}
+.para2 {
+  margin-left: 8px;
+}
+.para3 {
+  margin-left: 15px;
+}
+.para1 {
+  margin-left: -5px;
 }
