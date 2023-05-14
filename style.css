@@ -13,6 +13,7 @@ body {
   display: grid;
   place-items: center;
   align-items: center;
+  justify-content: center;
   min-width: 100%;
   min-height: 100vh;
   font-family: "Kumbh Sans", sans-serif;
@@ -20,6 +21,10 @@ body {
   object-fit: cover;
   background-size: contain;
   background-color: var(--dark-cyan);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .top-bg-img {
   background-image: url(bg-pattern-top.svg);
@@ -32,6 +37,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position: top left;
 }
 .bottom-bg-img {
   background-image: url(bg-pattern-bottom.svg);
@@ -42,6 +48,7 @@ body {
   bottom: -45rem;
   right: -25rem;
   background-position: bottom end;
+  background-size: cover;
 }
 .card {
   display: flex;
